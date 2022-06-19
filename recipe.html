@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>떡볶이 레시피</title>
+    <style>
+        * {
+            font-size: 20px;
+        }
+        table .point {
+            text-decoration: underline;
+        }
+        .point + p {
+            color: red;
+        }
+
+        .ingredient ~ pre {
+            color: blue;
+        }
+
+        pre.ingredient {
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
     <table border="1">
@@ -27,22 +46,21 @@
                 width="400px" height="400px">
             </th>
             <th>
-                <u>사용조리기구</u>
+                <p class="point">조리도구</p>
                 <p>칼, 도마, 냄비</p>
             </th>    
         </tr>
         <tr>
             <th>
-                <u>조리포인트</u>
+                <p class="point">조리포인트</p>
                 <p>떡을 양념에 졸인다</p>
             </th>
         </tr>
-        <tr style="height: 200px;">
+        <tr>
             <th>재료</th>
             <td colspan="3">
-                <pre>  
-    <b>*떡볶이</b>                        <b>*양념장</b>
-
+                <pre class="ingredient">  *떡볶이              *양념장</pre>
+                <pre> 
     쌀떡 4컵(400g)                 고추장 1/3컵(80g)
     밀가루떡 4컵(400g)              진간장 1/3컵(50g)
     사각어묵 4장(160g)              고운고춧가루 1/3컵(30g)
@@ -51,10 +69,10 @@
     대파 3컵(240g)                 MSG 1/2큰술(5g)
     물 1L
     삶은달걀 3개
-                </pre>
+                </pre> 
             </td>
         </tr>
-        <tr style="height: 200px;">
+        <tr>
             <th>조리방법</th>
             <td colspan="3">
                 <ol>
