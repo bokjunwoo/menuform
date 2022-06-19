@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <table class="table_menu">
+        <tr class="th_title">
+            <th class="th_menu">분식류</th>
+            <th class="th_menu">김밥류</th>
+            <th class="th_menu">식사류</th>
+        </tr>
+        <tr class="th_height">
+            <td class="td_menu">
+                <ul class="menu">
+                    <li><a href="recipe.html">떡볶이</a></li>
+                    <li>라면</li>
+                    <li>라볶이</li>
+                    <li>쫄면</li>
+                    <li class="sold_out">냉면(물/비빔)</li>
+                    <li>잔치국수</li>
+                </ul>
+            </td>
+            <td class="td_menu">
+                <ul class="menu">
+                    <li>야채김밥</li>
+                    <li>소고기김밥</li>
+                    <li>참치김밥</li>
+                    <li>치즈김밥</li>
+                    <li>돈까스김밥</li>
+                    <li>멸치김밥</li>
+                </ul>
+            </td>
+            <td class="td_menu">
+                <ul class="menu">
+                    <li>제육덮밥</li>
+                    <li>오징어덮밥</li>
+                    <li class="sold_out">순두부찌개</li>
+                    <li>오므라이스</li>
+                    <li>비빔밥</li>
+                    <li>돈까스</li>
+                    <li>고구마치즈돈까스</li>
+                    <li>새우볶음밥</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <table class="table_order">
+        <caption>주문서</caption>
+        <tr>
+            <td class="td_order">
+                <input type="checkbox" name="분식" value="떡볶이">떡볶이
+                <br>
+                <input type="checkbox" name="분식" value="라면">라면
+                <br>
+                <input type="checkbox" name="분식" value="라볶이">라볶이
+                <br>
+                <input type="checkbox" name="분식" value="쫄면">쫄면
+                <br>
+                <input type="checkbox" name="분식" value="냉면">냉면(계절메뉴)
+                <br>
+                <input type="checkbox" name="분식" value="잔치국수">잔치국수
+                <br>
+            </td>
+            <td class="td_order">
+                <input type="checkbox" name="김밥" value="야채김밥">야채김밥
+                <br>
+                <input type="checkbox" name="김밥" value="소고기김밥">소고기김밥
+                <br>
+                <input type="checkbox" name="김밥" value="참치김밥">참치김밥
+                <br>
+                <input type="checkbox" name="김밥" value="치즈김밥">치즈김밥
+                <br>
+                <input type="checkbox" name="김밥" value="돈까스김밥">돈까스김밥
+                <br>
+                <input type="checkbox" name="김밥" value="멸치김밥">멸치김밥
+                <br>
+            </td>
+            <td class="td_order">
+                <input type="checkbox" name="식사" value="제육덮밥">제육덮밥
+                <br>
+                <input type="checkbox" name="식사" value="오징어덮밥">오징어덮밥
+                <br>
+                <input type="checkbox" name="식사" value="순두부찌개">순두부찌개
+                <br>
+                <input type="checkbox" name="식사" value="오므라이스">오므라이스
+                <br>
+                <input type="checkbox" name="식사" value="비빔밥">비빔밥
+                <br>
+                <input type="checkbox" name="식사" value="돈까스">돈까스
+                <br>
+                <input type="checkbox" name="식사" value="고구마치즈돈까스">고구마치즈돈까스
+                <br>
+                <input type="checkbox" name="식사" value="새우볶음밥">새우볶음밥
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3" style="height: 70px;">
+                <input id="order_table_number" type="text" name="테이블번호" placeholder="테이블 번호를 적어주세요">
+                <input id="order_click" type="button" value="제출">
+            </th>
+        </tr>
+    </table>
+</body>
+
+</html>
